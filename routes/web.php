@@ -15,7 +15,4 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/home', [PageController::class , 'index'])->name('home');
+Route::get('/', [PageController::class , 'index'])->name('home');

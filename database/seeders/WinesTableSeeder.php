@@ -21,11 +21,12 @@ class WinesTableSeeder extends Seeder
             $new_wine = new Wine();
             $new_wine->winery = $wine->winery;
             $new_wine->wine = $wine->wine;
-            dump($wine->rating->average);
-            dump($wine->rating->reviews);
-            // $new_wine->rating_average = $wine['wine'];
-
+            $new_wine->rating_average = $wine->rating->average;
+            $new_wine->rating_review = $wine->rating->reviews;
+            $new_wine->location = $wine->location;
+            $new_wine->image = $wine->image;
+            // dump($new_wine);
         }
-        // dump( $wines);
+
     }
 }

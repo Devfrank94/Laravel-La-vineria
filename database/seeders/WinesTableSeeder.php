@@ -26,6 +26,7 @@ class WinesTableSeeder extends Seeder
             $new_wine->location = $wine->location;
             $new_wine->image = $wine->image;
             // dump($new_wine);
+            $new_wine->save();
         }
 
     }

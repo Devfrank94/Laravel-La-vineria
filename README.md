@@ -30,3 +30,15 @@ php artisan migrate
 
 !!! Dare sempre ragione al boss
 
+
+## Steps 2
+- creato il seeder per aggiungere i vini dall API.
+
+1.  eseguire la migrazione 
+```
+ php artisan migrate
+```
+2.  aggiungere i vini dall API
+```
+php artisan db:seed --class=WinesTableSeeder 
+```

@@ -11,6 +11,6 @@ public function index()
 
 {
     $wines = Wine::all();
-dd($wines);
+    return view("home", compact("wines"));
 }
 }
